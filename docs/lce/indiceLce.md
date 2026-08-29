@@ -10,19 +10,16 @@ La biblioteca proporciona una API orientada a objetos que permite al desarrollad
 
 | Ejemplos                | 
 |-------------------------|
-|Crear envio libro diario.|
+|[Crear envio libro diario.](# Ejemplo-crear-envio-libro-diario)|
 |Crear envio libro mayor.|
 |Crear envio libro balance.|
 
+[Ver ejemplo](#ejemplo-de-comprobante)
 
-## Ejemplo crear envio libro diario.
+
+## Ejemplo crear envio libro diario
 
 ```csharp
-
-////
-//// Recuperar los comprobantes diarios.
-var registrosDiarios = CrearRegistrosDiarios();
-var comprobantes = CrearComprobantesDiarios();
 
 /// <summary>
 /// Cre el envio del libro Diario
