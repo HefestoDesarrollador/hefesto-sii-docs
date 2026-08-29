@@ -337,8 +337,7 @@ public static List<HefComprobanteDiario> CrearComprobantesDiarios()
 
 ```
 
-#Resultado de la operación.
-
+## Resultado de la operación.
 
 ```xml
 
