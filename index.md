@@ -20,5 +20,5 @@ Nuestro objetivo es simplificar procesos técnicos complejos, proporcionando com
 
 ## Productos
 
-- [Hefesto LCE](docs/lce/indice.md)
+- [Hefesto LCE](docs/lce/indiceLce.md)
 
