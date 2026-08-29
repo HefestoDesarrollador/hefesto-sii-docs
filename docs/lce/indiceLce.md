@@ -8,9 +8,11 @@ La biblioteca proporciona una API orientada a objetos que permite al desarrollad
 
 ### ¿Qué permite hacer?
 
-Crear envio libro diario.
-Crear envio libro mayor.
-Crear envio libro balance.
+| Ejemplos                | 
+|-------------------------|
+|Crear envio libro diario.|
+|Crear envio libro mayor.|
+|Crear envio libro balance.|
 
 
 
