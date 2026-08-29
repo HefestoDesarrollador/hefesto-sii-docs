@@ -340,7 +340,7 @@ public static List<HefComprobanteDiario> CrearComprobantesDiarios()
 #Resultado de la operación.
 
 
-```XML
+```xml
 
 <?xml version="1.0" encoding="iso-8859-1"?>
 <LceEnvioLibros version="1.0">
