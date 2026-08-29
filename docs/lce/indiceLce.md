@@ -10,11 +10,9 @@ La biblioteca proporciona una API orientada a objetos que permite al desarrollad
 
 | Ejemplos                | 
 |-------------------------|
-|[Crear envio libro diario.](# Ejemplo-crear-envio-libro-diario)|
+|[Crear envio libro diario.](#Ejemplo-crear-envio-libro-diario)|
 |Crear envio libro mayor.|
 |Crear envio libro balance.|
-
-[Ver ejemplo](#ejemplo-de-comprobante)
 
 
 ## Ejemplo crear envio libro diario
@@ -52,10 +50,13 @@ static void GenerarEnvioLibroDiario()
         .SiiDocumentoEnvioLibros(doc =>
         {
             doc.RutEnvia = "99999999-9";
+
             doc.RutContribuyente = "99999999-9";
+            
             doc.SiiNotificacion(Noti =>
             {
                 Noti.Tipo = SiiTipoNotificacion.Formulario3301;
+            
                 Noti.Folio = 1234;
             });
 
@@ -66,22 +67,31 @@ static void GenerarEnvioLibroDiario()
         .SiiLibroDiario(lce =>
         {
             lce.Parcial = false;
+            
             lce.SiiLceDiario(diario => {
 
                 diario.ValorApertura = 1000;
+            
                 diario.SiiLceDiarioRes(res => {
 
                     res.SiiDocumentoDiarioRes(doc => {
 
                         doc.RutFirma = "99999999-9";
+                        
                         doc.SiiIdentificacion(iden => {
+                        
                             iden.RutContribuyente = "99999999-9";
+                        
                             iden.SiiPeriodoTributario(periodo =>
                             {
                                 periodo.Inicial = "2026-08";
+                        
                                 periodo.Final = "2026-08";
+                        
                             });
+                        
                             iden.Moneda = "CLP";
+                        
                         });
 
                         ////
